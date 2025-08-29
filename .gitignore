@@ -1,0 +1,29 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environment
+myenv/
+.env
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+
+# ---- FastAPI ----
+# (if you generate logs or compiled files)
+*.log
+
+# ---- Node / React frontend ----
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
