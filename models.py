@@ -13,7 +13,7 @@ class ProductBase(BaseModel):
 class ProductCreate(ProductBase):
     pass
 
-# Model used for updating a product via PUT request
+
 # All fields are optional, so you can update just one or all of them
 class ProductUpdate(ProductBase):
     name: Optional[str] = None
