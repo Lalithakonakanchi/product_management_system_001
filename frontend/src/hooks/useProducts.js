@@ -6,7 +6,7 @@ export default function useProducts() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-
+  console.log("products",products)
   const loadProducts = async () => {
     setLoading(true);
     try {
@@ -29,6 +29,7 @@ export default function useProducts() {
     await updateProduct(id, product);
     setMessage("Product updated successfully");
     loadProducts();
+
   };
 
   const removeProduct = async (id) => {
@@ -42,4 +43,5 @@ export default function useProducts() {
   }, []);
 
   return { products, loading, message, error, addProduct, editProduct, removeProduct, loadProducts, setMessage, setError };
+  
 }

@@ -6,7 +6,7 @@ export default function ProductRow({ product, onEdit, onDelete, currency }) {
       <td className="desc-cell" title={product.description}>
         {product.description}
       </td>
-      <td className="price-cell">${currency(product.price)}</td>
+      <td className="price-cell">${product.price}</td>
       <td>
         <span className="qty-badge">{product.quantity}</span>
       </td>

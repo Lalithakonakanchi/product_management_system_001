@@ -5,6 +5,7 @@ const api = axios.create({
 });
 
 export const fetchProducts = () => api.get("/products/");
-export const createProduct = (product) => api.post("/products/", product);
-export const updateProduct = (id, product) => api.put(`/products/${id}`, product);
-export const deleteProduct = (id) => api.delete(`/products/${id}`);
+export const createProduct = (product) => api.post("/product/", product);
+export const updateProduct = (id, product) => api.put(`/product/${id}`, product);
+export const deleteProduct = (id) => api.delete(`/product/${id}`);
+
